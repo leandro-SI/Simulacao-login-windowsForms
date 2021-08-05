@@ -29,13 +29,36 @@ namespace SistemaLogin
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label_BoasVindas = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label_BoasVindas
+            // 
+            this.label_BoasVindas.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_BoasVindas.Location = new System.Drawing.Point(56, 174);
+            this.label_BoasVindas.Name = "label_BoasVindas";
+            this.label_BoasVindas.Size = new System.Drawing.Size(689, 103);
+            this.label_BoasVindas.TabIndex = 0;
+            this.label_BoasVindas.Text = "Tela Inicial";
+            this.label_BoasVindas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.label_BoasVindas);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label_BoasVindas;
     }
 }
 
