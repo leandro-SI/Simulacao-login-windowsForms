@@ -31,7 +31,7 @@ namespace SistemaLogin
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.textSenha = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSenha = new System.Windows.Forms.Button();
@@ -55,13 +55,13 @@ namespace SistemaLogin
             this.txtUsuario.Size = new System.Drawing.Size(500, 44);
             this.txtUsuario.TabIndex = 1;
             // 
-            // textSenha
+            // txtSenha
             // 
-            this.textSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textSenha.Location = new System.Drawing.Point(12, 146);
-            this.textSenha.Name = "textSenha";
-            this.textSenha.Size = new System.Drawing.Size(500, 44);
-            this.textSenha.TabIndex = 3;
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(12, 146);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(500, 44);
+            this.txtSenha.TabIndex = 3;
             // 
             // label2
             // 
@@ -81,6 +81,7 @@ namespace SistemaLogin
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSenha
             // 
@@ -100,7 +101,7 @@ namespace SistemaLogin
             this.ControlBox = false;
             this.Controls.Add(this.btnSenha);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.textSenha);
+            this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label1);
@@ -115,7 +116,7 @@ namespace SistemaLogin
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox textSenha;
+        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnSenha;
